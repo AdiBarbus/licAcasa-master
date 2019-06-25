@@ -1,0 +1,43 @@
+﻿@model Interns.Services.Models.QAModelView
+
+@{
+    ViewBag.Title = "The Test";
+}
+
+<h2>Good Luck!</h2>
+
+@using (Html.BeginForm("TakeTests", "Test", FormMethod.Post, new {questions = Model.Questions}))
+{
+    @Html.HiddenFor(model=>model.Questions)
+    @Html.HiddenFor(model=>model.Answers)
+
+    for (int i = 0; i < Model.Questions.Count; i++)
+    {
+        @Html.HiddenFor(modelItem => modelItem.Questions[i].Id)
+        @Html.HiddenFor(modelItem => modelItem.Questions[i].Quest)
+        @Html.CheckBoxFor(modelItem => modelItem.Answers[i].IsChecked)
+    }
+
+    @*foreach (var item in Model.Questions)
+    {
+        @Html.HiddenFor(modelItem => item)
+        @Html.HiddenFor(modelItem => item.Id)
+        @Html.HiddenFor(modelItem => item.Quest)
+        <hr />
+        <div>@item.Id @item.Quest</div>
+        <ul style="list-style-type: none;">*@
+
+            @*@foreach (var item2 in Model.Answers.Where(e => e.QuestionId == item.Id))
+            {
+                @Html.HiddenFor(modelItem => item2.Id)
+                <li>
+                    @Html.CheckBoxFor(modelItem => item2.IsChecked) @Html.DisplayFor(modelItem => item2.Ans)
+                </li>
+            }*@
+        @*</ul>
+    }*@
+
+    <div>
+        <input style="margin-top: 20px" type="submit" value="Submit" />
+    </div>
+}
