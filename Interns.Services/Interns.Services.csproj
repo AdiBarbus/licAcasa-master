@@ -55,6 +55,7 @@
     <Compile Include="IService\ITestService.cs" />
     <Compile Include="Models\ChangePasswordModel.cs" />
     <Compile Include="Models\LoginInputModel.cs" />
+    <Compile Include="Models\QAModelView2.cs" />
     <Compile Include="Models\QAModelView.cs" />
     <Compile Include="Models\RegisterViewModel.cs" />
     <Compile Include="Models\SelectFK\SelectAdvertisesFKs.cs" />

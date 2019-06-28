@@ -1,0 +1,65 @@
+2019-06-26 09:38:02,630 DEBUG Interns.Presentation.Controllers.DomainController - Started getting all the advertises
+2019-06-26 09:38:08,089 DEBUG Interns.Presentation.Controllers.TestController - Started getting all the Tests
+2019-06-26 09:38:09,249 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 09:38:28,290 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 09:42:26,551 DEBUG Interns.Presentation.Controllers.DomainController - Started getting all the advertises
+2019-06-26 09:42:31,897 DEBUG Interns.Presentation.Controllers.TestController - Started getting all the Tests
+2019-06-26 09:42:33,439 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 09:44:39,249 DEBUG Interns.Presentation.Controllers.DomainController - Started getting all the advertises
+2019-06-26 09:44:41,295 DEBUG Interns.Presentation.Controllers.TestController - Started getting all the Tests
+2019-06-26 09:44:43,057 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 09:48:41,651 DEBUG Interns.Presentation.Controllers.DomainController - Started getting all the advertises
+2019-06-26 09:48:47,409 DEBUG Interns.Presentation.Controllers.QuestionController - Started getting all the Questions
+2019-06-26 09:48:48,663 DEBUG Interns.Presentation.Controllers.TestController - Started getting all the Tests
+2019-06-26 09:48:49,892 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 18:24:06,255 DEBUG Interns.Presentation.Controllers.DomainController - Started getting all the advertises
+2019-06-26 18:24:18,710 DEBUG Interns.Presentation.Controllers.LoginController - Started validating user credentials
+2019-06-26 18:24:20,961 INFO Interns.Presentation.Controllers.LoginController - User credentials are valid!
+2019-06-26 18:24:20,974 DEBUG Interns.Presentation.Controllers.DomainController - Started getting all the advertises
+2019-06-26 18:24:23,275 DEBUG Interns.Presentation.Controllers.TestController - Started getting all the Tests
+2019-06-26 18:24:26,451 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 18:25:34,068 DEBUG Interns.Presentation.Controllers.DomainController - Started getting all the advertises
+2019-06-26 18:25:37,516 DEBUG Interns.Presentation.Controllers.TestController - Started getting all the Tests
+2019-06-26 18:25:38,799 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 18:26:28,295 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 18:35:51,996 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 18:36:13,634 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 18:53:41,276 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 18:54:20,324 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 18:55:32,940 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 19:01:14,174 INFO Interns.Presentation.Controllers.LoginController - You were logged out succesfully
+2019-06-26 19:01:14,182 DEBUG Interns.Presentation.Controllers.DomainController - Started getting all the advertises
+2019-06-26 19:02:11,628 DEBUG Interns.Presentation.Controllers.LoginController - Started validating user credentials
+2019-06-26 19:02:13,933 INFO Interns.Presentation.Controllers.LoginController - User credentials are valid!
+2019-06-26 19:02:13,940 DEBUG Interns.Presentation.Controllers.DomainController - Started getting all the advertises
+2019-06-26 19:02:30,679 DEBUG Interns.Presentation.Controllers.TestController - Started getting all the Tests
+2019-06-26 19:02:32,701 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 19:04:53,998 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 19:12:07,315 DEBUG Interns.Presentation.Controllers.DomainController - Started getting all the advertises
+2019-06-26 19:12:10,474 DEBUG Interns.Presentation.Controllers.TestController - Started getting all the Tests
+2019-06-26 19:12:12,155 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 19:13:00,708 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 19:22:21,125 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 19:41:56,613 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 19:43:08,405 DEBUG Interns.Presentation.Controllers.DomainController - Started getting all the advertises
+2019-06-26 19:43:12,714 DEBUG Interns.Presentation.Controllers.TestController - Started getting all the Tests
+2019-06-26 19:43:14,182 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 19:51:29,308 DEBUG Interns.Presentation.Controllers.DomainController - Started getting all the advertises
+2019-06-26 19:51:39,804 DEBUG Interns.Presentation.Controllers.TestController - Started getting all the Tests
+2019-06-26 19:51:41,189 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 19:59:28,018 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 19:59:30,284 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 20:00:27,459 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 20:04:08,977 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 20:05:32,289 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 20:18:30,379 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 20:30:49,727 DEBUG Interns.Presentation.Controllers.DomainController - Started getting all the advertises
+2019-06-26 20:31:02,974 DEBUG Interns.Presentation.Controllers.TestController - Started getting all the Tests
+2019-06-26 20:31:04,353 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 20:31:22,327 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 20:36:54,877 DEBUG Interns.Presentation.Controllers.DomainController - Started getting all the advertises
+2019-06-26 20:36:59,489 DEBUG Interns.Presentation.Controllers.TestController - Started getting all the Tests
+2019-06-26 20:37:01,058 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1
+2019-06-26 20:39:40,524 DEBUG Interns.Presentation.Controllers.DomainController - Started getting all the advertises
+2019-06-26 20:39:50,409 DEBUG Interns.Presentation.Controllers.TestController - Started getting all the Tests
+2019-06-26 20:39:52,300 DEBUG Interns.Presentation.Controllers.TestController - Getting the adverise with the domain id:1

@@ -1,4 +1,4 @@
-﻿@model Interns.Services.Models.QAModelView
+﻿@model Interns.Services.Models.QAModelView2
 
 @{
     ViewBag.Title = "The Test";
@@ -6,38 +6,49 @@
 
 <h2>Good Luck!</h2>
 
-@using (Html.BeginForm("TakeTests", "Test", FormMethod.Post, new {questions = Model.Questions}))
+@using (Html.BeginForm("TakeTests", "Test", FormMethod.Post))
 {
-    @Html.HiddenFor(model=>model.Questions)
-    @Html.HiddenFor(model=>model.Answers)
-
-    for (int i = 0; i < Model.Questions.Count; i++)
+    foreach (var question in Model.Questions)
     {
-        @Html.HiddenFor(modelItem => modelItem.Questions[i].Id)
-        @Html.HiddenFor(modelItem => modelItem.Questions[i].Quest)
-        @Html.CheckBoxFor(modelItem => modelItem.Answers[i].IsChecked)
-    }
-
-    @*foreach (var item in Model.Questions)
-    {
-        @Html.HiddenFor(modelItem => item)
-        @Html.HiddenFor(modelItem => item.Id)
-        @Html.HiddenFor(modelItem => item.Quest)
         <hr />
-        <div>@item.Id @item.Quest</div>
-        <ul style="list-style-type: none;">*@
+        <div>@question.Id @question.Quest</div>
+        <ul style="list-style-type: none;">
 
-            @*@foreach (var item2 in Model.Answers.Where(e => e.QuestionId == item.Id))
+            @foreach (var answers in question.Answers)
             {
-                @Html.HiddenFor(modelItem => item2.Id)
-                <li>
-                    @Html.CheckBoxFor(modelItem => item2.IsChecked) @Html.DisplayFor(modelItem => item2.Ans)
-                </li>
-            }*@
-        @*</ul>
-    }*@
+            <li>
+                <label style="font-weight: normal">
+                    <input name="checkedAns-@question.Id" type="radio" value="@answers.Id" />
+                    @answers.Ans
+                </label>
+            </li>
+            }
+        </ul>
+    }
 
     <div>
         <input style="margin-top: 20px" type="submit" value="Submit" />
     </div>
 }
+
+
+
+@*for (int i = 0; i < Model.Questions.Count; i++)
+    {
+
+        @Html.HiddenFor(modelItem => modelItem.Questions[i].Id)
+        @Html.HiddenFor(modelItem => modelItem.Questions[i].Quest)
+        @Html.HiddenFor(modelItem => modelItem.Questions[i].Answers)
+        //var answers = Model.Answers.Where(c => c.QuestionId == Model.Questions[i].Id).ToList();
+
+        for (int j = 0; j < Model.Questions[i].Answers.Count; j++)
+        {
+            <li>
+
+                @Html.HiddenFor(modelItem => Model.Questions[i].Answers.ToList()[j].IsCorrect)
+                @Html.CheckBoxFor(modelItem => Model.Questions[i].Answers.ToList()[j].IsChecked) @Html.DisplayFor(modelItem => Model.Questions[i].Answers.ToList()[j].Ans)
+
+            </li>
+
+        }
+    }*@

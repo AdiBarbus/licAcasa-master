@@ -14,12 +14,12 @@ namespace Interns.Presentation.Controllers
     {
         private static readonly ILog Log = LogManager.GetLogger(typeof(TestController));
         private readonly ITestService testService;
-        private readonly IAnswerService answerService;
+        private readonly IQuestionService questionService;
 
-        public TestController(ITestService service, IAnswerService answerServ)
+        public TestController(ITestService service, IQuestionService questionServ)
         {
             testService = service;
-            answerService = answerServ;
+            questionService = questionServ;
         }
 
         [HttpGet]
@@ -44,13 +44,13 @@ namespace Interns.Presentation.Controllers
         [Route("test/TakeTest/{testId}")]
         public ActionResult TakeTest(int testId)
         {
-            QAModelView model = new QAModelView();
+            QAModelView2 model = new QAModelView2();
             Log.Debug($"Getting the adverise with the domain id:{testId}");
 
             try
             {
                 model.Questions = testService.GetQuestionsByTests(testId).ToList();
-                model.Answers = answerService.GetAnswers().ToList();
+                //model.Answers = answerService.GetAnswers().ToList();
             }
             catch (Exception e)
             {
@@ -61,24 +61,36 @@ namespace Interns.Presentation.Controllers
         }
 
         [HttpPost]
-        public ActionResult TakeTests(List<Question> questions)
+        public ActionResult TakeTests()
         {
+            var questions = questionService.GetQuestions();
             int points = 0;
-            //foreach (var modelAnswer in model)
-            //{
-            //    if (modelAnswer.IsCorrect && modelAnswer.IsChecked)
-            //    {
-            //        points++;
-            //    }
-            //}
 
-            return RedirectToAction("Results", points);
+            foreach (var que in questions)
+            {
+
+                string test = Request.Form[$"checkedAns-{que.Id}"];
+                if (!String.IsNullOrEmpty(test))
+                {
+                    int testValue = Int32.Parse(test);
+                    foreach (var queAnswer in que.Answers)
+                    {
+                        if (queAnswer.Id == testValue && queAnswer.IsCorrect)
+                        {
+                            points++;
+                        }
+                    }
+                }
+                
+            }
+
+            return RedirectToAction("Results", new {id = points});
         }
 
         [HttpGet]
-        public ActionResult Results(int points)
+        public ActionResult Results(int id)
         {
-            return View(points);
+            return View(id);
         }
 
         [HttpGet]
